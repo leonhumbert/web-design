@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Weather Visualizations</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Weather Analysis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#!" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="visuals/temperature.html">Max Temperature</a>
+                    <a class="dropdown-item" href="visuals/humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="visuals/cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="visuals/wind.html">Wind Speed</a>
+                  </div>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparisons.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4">
+        <h1 class="display-3">Latitude and Weather </h1>
+        <h1 class="display-3">緯度と天気</h1>
+        <h1 class="display-3">La Latitud y el Clima</h1>
+        <p class="lead">The objective of this report was to analyze the effects of latitude on weather. We obtained data from the OpenWeatherMap API and built a dataset from over 550 cities with Pandas on jupyter notebook. </p>
+        <p class="lead">We analyzed the relationship of latitude vs. temperature, humidity, cloudiness, and wind speed. We plotted visualizations with Matplotlib.  </p>
+        <p class="lead">このレポートの目的は緯度が天気に与える影響を分析することだった。 OpenWeather Map API を使用し、データをとって,　パンダスを使用しジュピターノットブックで５５０害以上のデータセットを作った。 </p>
+        <p class="lead">緯度と気温、湿気、曇、風邪のスピードの関係を分析した。MatPlotlibを用い、それぞれの分析結果をプロットした。</p>
+        <p class="lead">El objetivo de este reporte fué analizar los efectos de la latitud en el clima. Recogimos los datos de la OpenWeather Map API , y construimos un dataset de más de 550 ciudades con pandas en jupyter notebook.</p>
+        <p class="lead">Analizamos la relación de la latitud versus la temperatura, humedad, nubosidad y velocidad del viento. 
+          Graficamos las visualizaciones con la libreria Matplotlib.  </p>    
+      </header>
+
+
+      <!-- Page Features -->
+      <div class="row text-center">
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="/Resources/plots/temperature.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">vs. Temperature</h4>
+              <a href="visuals/temperature.html" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="/Resources/plots/humidity.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">vs. Humidity</h4>
+              <a href="visuals/humidity.html" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="/Resources/plots/cloudiness.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">vs. Cloudiness</h4>
+              <a href="visuals/cloudiness.html" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="/Resources/plots/wind.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">vs. Wind Speed</h4>
+              <a href="visuals/wind.html" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Leon Fukasawa 2020</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

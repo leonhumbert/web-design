@@ -1,0 +1,30 @@
+body .btn-primary {
+    background-color: #005b96;
+    border-color: #005b96;
+    color: #FFF; }
+body .btn-primary:hover, body .btn-primary:focus {
+    border-color: #03396c;
+    background-color: #03396c;
+    color: #FFF; }
+body .btn-primary:active, body .btn-primary:visited, body .btn-primary:active:focus, body .btn-primary:active:hover {
+    border-color: #03396c;
+    background-color: #03396c;
+    color: #FFF; }
+.navbar {
+    background-color: #09aebd;
+}
+.nav-link {
+    color: #000000
+}
+body {
+    padding-top: 54px;
+  }
+.box{
+    margin-top: 54px;
+    padding: 30px 30px 30px 30px;
+    background-color: #f8f8f8;
+}
+.h1, .h2, .h3 {
+    font-family: 'RobotoSlab', serif;
+        
+}
